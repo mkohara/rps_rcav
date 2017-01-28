@@ -1,13 +1,64 @@
-<h1> You played Scissors!</h1>
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<a href="/scissors">Replay scissors?</a>
-<a href="/paper"> Play paper </a>
-<a href="/rock">Play rock</a>
-<h1>
-  The computer played
-  <%= @computer_move %>
-</h1>
+<div class="container">
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-xs-12">
+    <div class="btn-group btn-group-justified">
 
-<h1>
- You <%= @outcome %> !
-</h1>
+<a class="btn btn-block btn-primary button_rs" href="/rock">Play Rock</a>
+<a class="btn btn-block btn-info button_p" href="/paper">Play Paper</a>
+<a class="btn btn-block btn-primary button_rs" href="/scissors">Play Scissors</a>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2 col-xs-6">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h2 class="panel-title text-center">Scissors</h2>
+      </div>
+        <div class="panel-body text-center">
+          <i class="fa move-icon fa-hand-scissors-o" style="font-size: 144px;"> </i>
+
+        </div>
+
+
+
+    </div>
+  </div>
+    <div class="col-md-4 col-xs-6">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title text-center"> <%=@computer_move%> </h2>
+        </div>
+          <div class="panel-body text-center">
+            <i class="fa move-icon <%=@image%>" style="font-size: 144px;"> </i>
+
+
+          </div>
+
+
+          </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="well text-center">
+      <span class="label label-warning" style="font-size: 30px;"> You <%= @outcome %></span>
+    </div>
+  </div>
+</div>
+
+</div
