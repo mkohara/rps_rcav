@@ -1,10 +1,10 @@
 class GamesController < ApplicationController
   def play_rock
-    @computer_move = ["rock","paper","scissors"].sample
+    @computer_move = ["Rock","Paper","Scissors"].sample
 
-     if @computer_move == "rock"
+     if @computer_move == "Rock"
       @outcome= "tied"
-    elsif @computer_move == "paper"
+    elsif @computer_move == "Paper"
       @outcome= "lose"
      else
       @outcome= "win"
@@ -15,11 +15,11 @@ class GamesController < ApplicationController
   end
 
   def play_paper
-     @computer_move = ["rock", "paper",
-    "scissors"].sample
-     if @computer_move == "rock"
+     @computer_move = ["Rock", "Paper",
+    "Scissors"].sample
+     if @computer_move == "Rock"
      @outcome= " win"
-    elsif @computer_move == "paper"
+   elsif @computer_move == "Paper"
      @outcome= " tied"
      else
      @outcome= " lose"
@@ -28,10 +28,10 @@ class GamesController < ApplicationController
   end
 
   def play_scissors
-    @computer_move = ["rock", "paper", "scissors"].sample
-     if @computer_move == "rock"
+    @computer_move = ["Rock", "Paper", "Scissors"].sample
+     if @computer_move == "Rock"
      @outcome= " lost"
-   elsif @computer_move == "paper"
+   elsif @computer_move == "Paper"
      @outcome= " win"
      else
      @outcome= " tie"

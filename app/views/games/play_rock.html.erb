@@ -1,13 +1,22 @@
-<h1> You played Rock! </h1>
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
 
-<a href="/rock"> Replay rock?</a>
-<a href="/scissors">Play scissors</a>
-<a href="/paper">Play paper</a>
+
+<h1> You played Rock! </h1>
+<div class="row">
+  <div class="colspan-12">
+
+
+    <a href="/rock"> Replay rock?</a>
+    <a href="/scissors">Play scissors</a>
+    <a href="/paper">Play paper</a>
+
+  </div>
+</div>
 <h1>
   The computer played
   <%= @computer_move %>
 </h1>
 
 <h1>
- You <%= @outcome %> !
+  You <%= @outcome %> !
 </h1>
